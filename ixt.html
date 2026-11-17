@@ -1,1 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Objects and DOM</title>
+  <link rel="stylesheet" href="ixt.css">
+</head>
+<body>
 
+<header class="topbar">
+  <div class="brand"><span class="brand-icon">XI</span> GROUP-5 PRESENTATION</div>
+  <div class="topbar-label">JAVASCRIPT • OBJECTS & DOM</div>
+</header>
+
+<main class="presentation">
+
+  <!-- 1. TITLE -->
+  <section class="slide active">
+    <div class="title-content">
+      <p class="eyebrow">INFORMATION AND COMMUNICATION TECHNOLOGY</p>
+      <div class="title-line"></div>
+      <h1>JAVASCRIPT<br><span>OBJECTS & DOM</span></h1>
+      <p class="lead">Understanding properties, values, and how JavaScript interacts with web documents.</p>
+      <div class="topic-tags">
+        <span>OBJECTS</span>
+        <span>PROPERTIES & VALUES</span>
+        <span>DOM NODES</span>
+      </div>
+      <p class="presenter">11-CREATIVITY • ICT</p>
+    </div>
+    <div class="decor-circle circle-one"></div>
+    <div class="decor-circle circle-two"></div>
+  </section>
+
+  <!-- 2. ENERGIZER QUESTION 1 -->
+  <section class="slide energizer-slide">
+    <p class="eyebrow">01 • WORD SCRAMBLE</p>
+    <span class="round-number">QUESTION 01 / 06</span>
+    <h2>Unscramble the Word!</h2>
+    <div class="scramble-word">GTA</div>
+    <p class="lead">Hint: An HTML element marker used to define an element.</p>
+    <p class="small-note">Think carefully before moving to the next slide!</p>
+  </section>
+
+  <!-- 3. ENERGIZER ANSWER 1 -->
+  <section class="slide answer-slide">
+    <p class="eyebrow">01 • ANSWER REVEAL</p>
+    <span class="round-number">ANSWER 01 / 06</span>
+    <h2>The correct answer is...</h2>
+    <div class="revealed-word">TAG</div>
+    <p class="lead">An HTML tag defines an element in a webpage, such as &lt;p&gt; or &lt;h1&gt;.</p>
+  </section>
+
+  <!-- 4. ENERGIZER QUESTION 2 -->
+  <section class="slide energizer-slide">
+    <p class="eyebrow">01 • WORD SCRAMBLE</p>
+    <span class="round-number">QUESTION 02 / 06</span>
+    <h2>Unscramble the Word!</h2>
+    <div class="scramble-word">RTOECSEL</div>
+    <p class="lead">Hint: Used to target specific HTML elements so you can apply styles to them.</p>
+    <p class="small-note">Can you figure it out?</p>
+  </section>
+
+  <!-- 5. ENERGIZER ANSWER 2 -->
+  <section class="slide answer-slide">
+    <p class="eyebrow">01 • ANSWER REVEAL</p>
+    <span class="round-number">ANSWER 02 / 06</span>
+    <h2>The correct answer is...</h2>
+    <div class="revealed-word">SELECTOR</div>
+    <p class="lead">Use: Identifies which HTML elements will receive specific styles, such as colors, fonts, and sizes.
+
+Example: Changing the text color of all paragraphs.</p>
+  </section>
+
+  <!-- 6. ENERGIZER QUESTION 3 -->
+  <section class="slide energizer-slide">
+    <p class="eyebrow">01 • WORD SCRAMBLE</p>
+    <span class="round-number">QUESTION 03 / 06</span>
+    <h2>Unscramble the Word!</h2>
+    <div class="scramble-word">HTMIRGOLA</div>
+    <p class="lead">Hint: A step-by-step set of instructions used to solve a problem or complete a task.</p>
+    <p class="small-note">What could this word be?</p>
+  </section>
+
+  <!-- 7. ENERGIZER ANSWER 3 -->
+  <section class="slide answer-slide">
+    <p class="eyebrow">01 • ANSWER REVEAL</p>
+    <span class="round-number">ANSWER 03 / 06</span>
+    <h2>The correct answer is...</h2>
+    <div class="revealed-word">ALGORITHM</div>
+    <p class="lead">Use: Provides a logical, step-by-step procedure to solve a problem or perform a task.
+
+Example: Creating steps for a program to calculate the average of three numbers.</p>
+  </section>
+
+  <!-- 8. ENERGIZER QUESTION 4 -->
+  <section class="slide energizer-slide">
+    <p class="eyebrow">01 • WORD SCRAMBLE</p>
+    <span class="round-number">QUESTION 04 / 06</span>
+    <h2>Unscramble the Word!</h2>
+    <div class="scramble-word">TNUPI</div>
+    <p class="lead">Hint: Data or information entered into a computer or program for processing.</p>
+    <p class="small-note">This one might be a little tricky!</p>
+  </section>
+
+  <!-- 9. ENERGIZER ANSWER 4 -->
+  <section class="slide answer-slide">
+    <p class="eyebrow">01 • ANSWER REVEAL</p>
+    <span class="round-number">ANSWER 04 / 06</span>
+    <h2>The correct answer is...</h2>
+    <div class="revealed-word long-word">INPUT</div>
+    <p class="lead">Use: Allows users to enter or provide data that a program can process.
+
+Example: A text box where users type their name or password.</p>
+  </section>
+
+  <!-- 10. ENERGIZER QUESTION 5 -->
+  <section class="slide energizer-slide">
+    <p class="eyebrow">01 • WORD SCRAMBLE</p>
+    <span class="round-number">QUESTION 05 / 06</span>
+    <h2>Unscramble the Word!</h2>
+    <div class="scramble-word">WOBRESR</div>
+    <p class="lead">Hint: An application used to access websites.</p>
+    <p class="small-note">Almost there!</p>
+  </section>
+
+  <!-- 11. ENERGIZER ANSWER 5 -->
+  <section class="slide answer-slide">
+    <p class="eyebrow">01 • ANSWER REVEAL</p>
+    <span class="round-number">ANSWER 05 / 06</span>
+    <h2>The correct answer is...</h2>
+    <div class="revealed-word">BROWSER</div>
+    <p class="lead">A browser allows users to visit and view websites.</p>
+  </section>
+
+  <!-- 12. ENERGIZER QUESTION 6 -->
+  <section class="slide energizer-slide">
+    <p class="eyebrow">01 • WORD SCRAMBLE</p>
+    <span class="round-number">QUESTION 06 / 06</span>
+    <h2>Unscramble the Word!</h2>
+    <div class="scramble-word">TNEMELE</div>
+    <p class="lead">Hint: A basic building block of an HTML document.</p>
+    <p class="small-note">Last question! Give it your best guess.</p>
+  </section>
+
+  <!-- 13. ENERGIZER ANSWER 6 -->
+  <section class="slide answer-slide">
+    <p class="eyebrow">01 • FINAL ANSWER</p>
+    <span class="round-number">ANSWER 06 / 06</span>
+    <h2>The correct answer is...</h2>
+    <div class="revealed-word">ELEMENT</div>
+    <p class="lead">An HTML element is made up of tags and its content.</p>
+  </section>
+
+  <!-- 14. REVIEWER -->
+  <section class="slide">
+    <p class="eyebrow">02 • QUICK REVIEW</p>
+    <h2>Let's Review: Loops and Arrays</h2>
+    <p class="lead">Before moving to our new lesson, let's remember two JavaScript concepts.</p>
+
+    <div class="two-columns">
+      <article class="info-card">
+        <div class="card-number">01</div>
+        <h3>Loops</h3>
+        <p>Loops repeat a block of code while a condition is true or for a specific number of times.</p>
+        <pre><code>for (let i = 1; i <= 3; i++) {
+  console.log(i);
+}</code></pre>
+        <p class="example-label">Output: 1, 2, 3</p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-number">02</div>
+        <h3>Arrays</h3>
+        <p>An array stores multiple values in a single variable. Each item has an index.</p>
+        <pre><code>let fruits = [ "Apple","Mango","Banana" ];
+
+  console.log(fruits [0]);
+</code></pre>
+        <p class="example-label">Example: fruits[0] is "Apple".</p>
+      </article>
+    </div>
+
+    <div class="callout">
+      <strong>Remember:</strong> Loops repeat instructions, while arrays organize multiple values.
+    </div>
+  </section>
+
+  <!-- 15. OBJECTS -->
+  <section class="slide">
+    <p class="eyebrow">03 • TOPIC 1</p>
+    <h2>What is a JavaScript Object?</h2>
+    <p class="lead">An object is a collection of related information stored using properties and values.</p>
+
+    <div class="object-layout">
+      <div class="object-visual">
+        <div class="object-icon">{ }</div>
+        <h3>student</h3>
+        <p>One object containing related information.</p>
+      </div>
+
+      <div class="property-list">
+        <div class="property-row"><span>name</span><b>"Alex"</b></div>
+        <div class="property-row"><span>age</span><b>17</b></div>
+        <div class="property-row"><span>strand</span><b>"ICT"</b></div>
+        <div class="property-row"><span>isEnrolled</span><b>true</b></div>
+      </div>
+    </div>
+
+    <div class="callout">
+      Objects help us group information that belongs together instead of storing everything separately.
+    </div>
+  </section>
+
+  <!-- 16. PROPERTIES AND VALUES -->
+  <section class="slide">
+    <p class="eyebrow">03 • TOPIC 1</p>
+    <h2>Properties and Values</h2>
+    <p class="lead">Every property in an object has a corresponding value.</p>
+
+    <div class="two-columns">
+      <article class="info-card">
+        <div class="card-number">A</div>
+        <h3>Property</h3>
+        <p>A property is the name or label that describes a piece of information in an object.</p>
+        <div class="code-highlight">name</div>
+        <p class="example-label">It tells us what information is being stored.</p>
+      </article>
+
+      <article class="info-card">
+        <div class="card-number">B</div>
+        <h3>Value</h3>
+        <p>A value is the actual information assigned to a property.</p>
+        <div class="code-highlight">"Alex"</div>
+        <p class="example-label">It tells us the information stored under that property.</p>
+      </article>
+    </div>
+
+    <div class="code-panel">
+      <p class="code-label">EXAMPLE</p>
+      <pre><code>let student = {
+  name: "Alex",
+  age: 17
+};</code></pre>
+      <p><span class="red-text">name</span> and <span class="red-text">age</span> are properties. <span class="red-text">"Alex"</span> and <span class="red-text">17</span> are their values.</p>
+    </div>
+  </section>
+
+  <!-- 17. ACCESSING VALUES -->
+  <section class="slide">
+    <p class="eyebrow">03 • TOPIC 1</p>
+    <h2>How to Access Object Values</h2>
+    <p class="lead">JavaScript provides two common ways to get information from an object.</p>
+
+    <div class="two-columns">
+      <article class="info-card">
+        <h3>Dot Notation</h3>
+        <pre><code>student.name</code></pre>
+        <p>Uses a dot followed by the property name.</p>
+        <div class="result-box">Result: "Alex"</div>
+      </article>
+
+      <article class="info-card">
+        <h3>Bracket Notation</h3>
+        <pre><code>student["name"]</code></pre>
+        <p>Uses square brackets and the property name inside quotation marks.</p>
+        <div class="result-box">Result: "Alex"</div>
+      </article>
+    </div>
+
+    <div class="callout">
+      Both methods can access the value of a property in an object.
+    </div>
+  </section>
+
+  <!-- 18. DOM INTRODUCTION -->
+  <section class="slide">
+    <p class="eyebrow">04 • TOPIC 2</p>
+    <h2>What is the Document Object Model?</h2>
+    <p class="lead">The DOM is a programming interface that allows JavaScript to access and change the content and structure of a webpage.</p>
+
+    <div class="dom-layout">
+      <div class="dom-tree">
+        <div class="tree-node root">document</div>
+        <div class="tree-branch">
+          <div class="tree-node">html</div>
+          <div class="tree-branch">
+            <div class="tree-node">head</div>
+            <div class="tree-node">body</div>
+            <div class="tree-branch">
+              <div class="tree-node">h1</div>
+              <div class="tree-node">p</div>
+              <div class="tree-node">button</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dom-description">
+        <h3>Think of it as a family tree.</h3>
+        <p>The DOM organizes the elements of an HTML document into a tree-like structure.</p>
+        <p>JavaScript can use this structure to find elements and update them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19. DOM NODES -->
+  <section class="slide">
+    <p class="eyebrow">04 • TOPIC 2</p>
+    <h2>Understanding DOM Nodes</h2>
+    <p class="lead">A node is an individual part of the DOM tree.</p>
+
+    <div class="node-grid">
+      <article class="node-card">
+        <div class="node-symbol">E</div>
+        <h3>Element Node</h3>
+        <p>Represents HTML elements such as <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;div&gt;</code>.</p>
+      </article>
+
+      <article class="node-card">
+        <div class="node-symbol">T</div>
+        <h3>Text Node</h3>
+        <p>Contains the text written inside an HTML element.</p>
+      </article>
+
+      <article class="node-card">
+        <div class="node-symbol">A</div>
+        <h3>Attribute Node</h3>
+        <p>Represents attributes of an element, such as <code>id</code> or <code>class</code>.</p>
+      </article>
+
+      <article class="node-card">
+        <div class="node-symbol">C</div>
+        <h3>Comment Node</h3>
+        <p>Represents comments written in an HTML document.</p>
+      </article>
+    </div>
+
+    <div class="callout">
+      These nodes help JavaScript understand and work with different parts of a webpage.
+    </div>
+  </section>
+
+  <!-- 20. DOM EXAMPLE -->
+  <section class="slide">
+    <p class="eyebrow">04 • TOPIC 2</p>
+    <h2>How JavaScript Uses the DOM</h2>
+    <p class="lead">JavaScript can select an HTML element and change its content.</p>
+
+    <div class="demo-layout">
+      <div class="code-panel">
+        <p class="code-label">HTML</p>
+        <pre><code>&lt;h2 id="message"&gt;
+  Hello, World!
+&lt;/h2&gt;</code></pre>
+
+        <p class="code-label">JAVASCRIPT</p>
+        <pre><code>document.getElementById("message")
+  .textContent = "Welcome!";</code></pre>
+      </div>
+
+      <div class="demo-preview">
+        <span class="preview-label">LIVE DEMO</span>
+        <h3 id="demoMessage">Hello, World!</h3>
+        <p>Click the button to see how JavaScript changes webpage content.</p>
+        <button class="red-button" id="domDemoButton">Change Text</button>
+        <button class="outline-button" id="domResetButton">Reset</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 21. ACTIVITY -->
+  <section class="slide">
+    <p class="eyebrow">05 • CLASS ACTIVITY</p>
+    <h2>Let's Apply What We Learned!</h2>
+    <p class="lead">Study the situation and identify the object properties, values, and DOM action.</p>
+
+    <div class="activity-card">
+      <span class="activity-number">ACTIVITY 01</span>
+      <h3>Student Information</h3>
+      <p>A webpage displays a student's name, age, and strand. The teacher wants to organize the student's information using a JavaScript object.</p>
+
+      <pre><code>let student = {
+  name: "Jamie",
+  age: 17,
+  strand: "ICT"
+};</code></pre>
+
+      <div class="activity-questions">
+        <p><b>1.</b> What are the properties of the object?</p>
+        <p><b>2.</b> What are the values of the object?</p>
+        <p><b>3.</b> What code can access the student's strand?</p>
+        <p><b>4.</b> What DOM method can select an element using its ID?</p>
+      </div>
+
+      <button class="red-button" id="revealActivity">Reveal Answers</button>
+
+      <div class="activity-answer hidden" id="activityAnswers">
+        <p><b>1.</b> name, age, strand</p>
+        <p><b>2.</b> "Jamie", 17, "ICT"</p>
+        <p><b>3.</b> student.strand or student["strand"]</p>
+        <p><b>4.</b> document.getElementById()</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 22. QUIZ QUESTIONS -->
+  <section class="slide">
+    <p class="eyebrow">06 • KNOWLEDGE CHECK</p>
+    <h2>10-Item Quiz</h2>
+    <p class="lead">Choose your answers on paper or with your classmates. The answer key is on the next slide.</p>
+    <div id="quizQuestions" class="quiz-list"></div>
+  </section>
+
+  <!-- 23. QUIZ ANSWER KEY -->
+  <section class="slide">
+    <p class="eyebrow">07 • ANSWER KEY</p>
+    <h2>Let's Check Your Answers!</h2>
+    <p class="lead">Here are the correct answers for all 10 questions.</p>
+    <div id="quizAnswers" class="quiz-list answer-list"></div>
+  </section>
+
+  <!-- 24. CLOSING -->
+  <section class="slide closing-slide">
+    <p class="eyebrow">END OF PRESENTATION</p>
+    <h1>THANK<br><span>YOU!</span></h1>
+    <p class="lead">Objects organize information. The DOM connects JavaScript to webpages.</p>
+    <div class="closing-mark">11-CREATIVITY • ICT</div>
+  </section>
+
+</main>
+
+<footer class="controls">
+  <button id="prevBtn" class="nav-button" aria-label="Previous slide">←</button>
+
+  <div class="slide-status">
+    <span id="slideNumber">01</span>
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+    <span id="totalSlides">24</span>
+  </div>
+
+  <button id="nextBtn" class="nav-button next" aria-label="Next slide">→</button>
+</footer>
+
+<script src="ixt.js"></script>
+</body>
+</html>
